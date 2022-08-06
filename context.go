@@ -185,7 +185,7 @@ func (ctx *Context) DecryptFile() error {
 }
 
 // Delete plaintext or ciphertext file
-func (ctx *Context) DeleteFile() {
+func (ctx *Context) DeleteFileIfAsked() {
 	if ctx.deleteSource {
 		var fileToDelete string
 		if ctx.encrypt {
